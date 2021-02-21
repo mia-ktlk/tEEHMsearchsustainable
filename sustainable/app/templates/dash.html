@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="sidenav">
+  <a href="{{url_for('adminReports')}}" target="_blank">Current Reports</a>
+  </div>
+  <div class="main">
+      <h1 class="mb-3 mt-3">Welcome to the Admin Dashboard</h1>
+      <div class="card">
+        {% if full %}
+        {% for r in reports %}
+        <div class="alert alert-success mb-3" role="alert">
+          The item {{ r['itemName'] }} was reported with "{{ r['message'] }}"<br> <br>
+          <a href="/deleteConfirm?delet=items&key={{ r['origKey']}}&otherKey={{ r['reportKey']}}"><div class="btn btn-success">Delete The Entry</div></a>
+          <a href="/deleteConfirm?delet=reported&key={{ r['reportKey']}}"><div class="btn btn-success">Dismiss</div></a>
+          <hr>
+        </div>
+        {% endfor %}
+        {% endif %}
+        <div class="card">
+          {% if full2 %}
+          {% for s in suggestions %}
+          <div class="alert alert-success mb-3" role="alert">
+            The item {{ s['itemName'] }} was suggested with "{{ s['message'] }} and {{ s['url'] }}"<br> <br>
+            <a href="/deleteConfirm?delet=reported&key={{ s['sKey']}}"><div class="btn btn-success">Dismiss</div></a>
+            <a href="https://console.firebase.google.com/project/search-sustainable/overview"><div class="btn btn-success">Add to Database</div></a>
+            <hr>
+          </div>
+            {% endfor %}
+            {% endif %}
+          <div class="card-body">
+          <bold>Announcements: HackBeanPot project submission is Sunday February 21st at 9:30am!</bold> <br> <br>
+          This is the Search Sustainable admin dashboard. Using this dashboard the Search Sustainable admin team can view any reported items or see any 
+          requests for items. These reports and requests can be approved or dismissed.
+        </div>
+      </div>
+  </div> 
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "Base.html" %}
+
+{% block content %}  <!-- Masthead -->
+<section class="bg-mint">
+<p class="mt-5 mb-5 text-center">Showing results for open <span class="font-weight-bold">reports</span></p> 
+  <br>
+<div class="container">
+  <div class="row mb-5">
+      {% for result in results %}
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card mb-5">
+          <div class="card-body text-center">
+            <h5 class="text-gray card-title">{{ result['itemName'] }}</h5>
+            <p class="card-subtitle mb-3 text-muted">Message: {{ result['message'] }}</p>
+            <a href="/deleteConfirm?delet=items&key={{ result['origKey']}}&otherKey={{ result['reportKey']}}"><div class="text-small text-left text-red card-text mb-2">Delete The Entry</div></a>
+            <a href="/deleteConfirm?delet=reported&key={{ result['reportKey']}}"><div class="text-small text-right text-gray card-text mb-2">Dismiss</div></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

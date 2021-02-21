@@ -1,0 +1,39 @@
+{% extends "loginbase.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="static/img/login.jpg" id="icon" alt="User Icon" />
+      </div>
+
+      {% if fail %}
+      <div class="alert alert-danger" role="alert">
+        Invalid username or password
+      </div>
+      {% endif %}
+
+      {% if passReset %}
+      <div class="alert alert-danger" role="alert">
+        Check your email for a reset link, then log in here!
+      </div>
+      {% endif %}
+  
+      <!-- Login Form -->
+      <form action="" method="post">
+        {{ form.csrf_token }}
+        {{ form.username(class_="fadeIn second form-input", placeholder="username") }}
+        {{ form.password(class_="fadeIn third form-input", placeholder="password") }}
+        {{ form.submit()}}
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="{{ url_for('forgotPass')}}">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="" id="icon" alt="User Icon" />
+      </div>
+
+      {% if fail %}
+      <div class="alert alert-danger" role="alert">
+        Something went wrong, please try again
+      </div>
+      {% endif %}
+  
+      <!-- Forgot Pass Form -->
+      <form action="" method="post">
+        {{ form.csrf_token }}
+        {{ form.email(class_="fadeIn second form-input", placeholder="email address") }}
+        {{ form.submit()}}
+      </form>
+  
+    </div>
+  </div>
+{% endblock %}

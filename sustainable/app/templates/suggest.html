@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+
+    {% if fail %}
+    <div class="alert alert-danger" role="alert">
+        Something went wrong, please try again
+    </div>
+    {% endif %}
+
+      
+  
+      <!-- Report Form -->
+      <h4 class="mt-4">Suggest a product <br>or vendor for us to add:</h4>
+      <form class="mt-4 mb-4" action="" method="POST">
+        {{ form.csrf_token }}
+        {{ form.name(class_="fadeIn second form-input", placeholder="Name of the company") }}
+        {{ form.reason(class_="fadeIn second form-input", placeholder="Brief explanation why") }}
+        {{ form.url(class_="fadeIn second form-input", placeholder="URL for the site") }}
+        {{ form.submit(class="btn btn-success")}}
+      </form>
+  
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}  <!-- Masthead -->
+<header class="masthead text-white text-center">
+  <div class="overlay header-masthead"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5">Find everything you need from a sustainable source.</h1>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div class="row searchFilter" >
+          <div class="col-sm-12" >
+            <form action="" method="POST">
+              {{ form.csrf_token }}
+           <div class="input-group" >
+            {{ form.search(class="tall-input form-control",placeholder="Search for an item...") }}
+            {{ form.filter(class="tall-input form-control") }}
+            {{ form.go(class="tall-input btn btn-success") }}
+           </div>
+           </form>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}

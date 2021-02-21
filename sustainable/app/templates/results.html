@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}  <!-- Masthead -->
+<section class="bg-mint">
+<p class="mt-5 mb-5 text-center">Showing results for "<span class="font-weight-bold">{{ term }}</span>." 
+  <br><a href="/"><i class="fas fa-search"></i>  Search for another product.</a>
+</p>
+<div class="container">
+  <div class="row mb-5">
+      {% for result in results %}
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card mb-5">
+          <div class="card-body text-center d-flex flex-column">
+            <a href="{{ result['url'] }}">
+            <h4 class="mb-3 text-green text-left">${{ result['price'] }}</h4>
+            <img src="{{ result['img_src'] }}" class="img-fluid mb-2" style="height: 250px;" alt="Responsive image" class="img-thumbnail">
+            <h6 class="card-subtitle mb-3 text-muted">{{ result['brand'] }}</h6>
+            <h5 class="text-gray card-title">{{ result['name'] }}</h5>
+            <p class="card-subtitle mb-3 text-muted">Sold by {{ result['vendor'] }}</p>
+            <p class="text-gray card-text mb-2">Rating: {{ result['rating'] }} stars </p>
+            </a>
+            <a class="mt-auto" href="/report?name={{ result['name']}}"><div class="text-small text-right text-gray card-text mb-2">Report</div></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center row mb-5">
+      <h6 class="text-center" style="text-align:center">Is there something we are missing? Click <a href="/suggest">here</a> to suggest sustainable vendors or brands for us to add.</h6>
+    </div>
+  </div>
+</section>
+{% endblock %}

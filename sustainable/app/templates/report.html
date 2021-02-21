@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+    {% if fail %}
+    <div class="alert alert-danger" role="alert">
+        Something went wrong, please try again
+    </div>
+    {% endif %}
+
+      
+  
+      <!-- Report Form -->
+      <h4 class="mt-4">Submit a report</h4>
+      <p>Please tell us why you are reporting the item. <br> Ex: "The seller is unethical"</p>
+      <form class="mt-2 mb-5" action="" method="POST">
+        {{ form.csrf_token }}
+        {{ form.reason(class_="fadeIn second form-input", placeholder="Brief explanation...") }}
+        {{ form.submit(class="btn btn-success")}}
+      </form>
+  
+    </div>
+  </div>
+{% endblock %}
