@@ -97,7 +97,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 ### Admin powers
 
-So you want to ~~steal our idea~~ run your own version of the site? Lucky for you, we've prepared all the admin cases. I hope you read our prior sections about the report nd suggestion features, because nothing beats spam like a dismiss button.
+So you want to ~~steal our idea~~ run your own version of the site? Lucky for you, we've prepared all the admin cases. I hope you read our prior sections about the report and suggestion features, because nothing beats spam like a dismiss button.
 
 #### Logging In
 
