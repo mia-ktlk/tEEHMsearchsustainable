@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 * bash
   ```sh
-  pip install requirements.txt
+  pip install -r requirements.txt
   ```
 Python 3.8.2
 
@@ -61,16 +61,15 @@ Python 3.8.2
    ```
 3. Export Flask environment variable
     ```bash
-    $ export FLASK_APP=sustainable.py
+    $ export FLASK_APP=sustainable/sustainable.py
     ```
     or install python-dotenv
     ```bash
     $ pip install python dot-env
-    $ echo "FLASK_APP=sustainable.py" > .flaskenv
+    $ echo "FLASK_APP=sustainable/sustainable.py" > .flaskenv
     ```
 4. Run the app
     ```bash
-    $ cd sustainable
     $ flask run
     ```
 
@@ -133,8 +132,6 @@ Project Link: [https://github.com/mia-ktlk/hbp2021.git](https://github.com/mia-k
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [ReadME Template](https://github.com/othneildrew/Best-README-Template)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
 * [Font Awesome](https://fontawesome.com)
 
 
