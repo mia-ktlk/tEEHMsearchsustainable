@@ -88,11 +88,11 @@ Use this space to show useful examples of how a project can be used. Additional 
 
   #### Report
 
-    Not impressed with one of the results? Smack that report button and get ready to let the admins have it (constrcutively of course). Once pressed, the button will bring you to a report form where you can fill out the multitude of reasons this particular item wasn't to your taste. Previous user examples include: 'its too expensive', 'this item isnt real', 'i searched for meat and got a statue of a rooster.' It's an open box, the page is yours (of course, stay on topic if you have any interest in getting it resolved).
+   Not impressed with one of the results? Smack that report button and get ready to let the admins have it (constructively of course). Once pressed, the button will bring you to a report form where you can fill out the multitude of reasons this particular item wasn't to your taste. Previous user examples include: 'its too expensive', 'this item isnt real', 'i searched for meat and got a statue of a rooster.' It's an open box, the page is yours (of course, stay on topic if you have any interest in getting it resolved).
 
   #### Suggestion
 
-    For those of you with a less spiteful spirit, there's another way to help the admins of your local site: the suggestion button. Found at the bottom of the results page, this button will allow you to send the admins the name, description, and url of an item you'd wish to see on the store. But remember kids, this webiste is about sustainable goods, don't go spamming the admins to add the newest edition of Nintendos Yugi Monsters, its simply not what the site is for.
+   For those of you with a less spiteful spirit, there's another way to help the admins of your local site: the suggestion button. Found at the bottom of the results page, this button will allow you to send the admins the name, description, and url of an item you'd wish to see on the store. But remember kids, this website is about sustainable goods, don't go spamming the admins to add the newest edition of Nintendos Yugi Monsters, its simply not what the site is for.
 
 
 ### Admin powers
