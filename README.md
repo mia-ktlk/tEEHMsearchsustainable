@@ -19,6 +19,9 @@ We were inspired by Amazon, which is popular because of its convenience in findi
 Search Sustainable is a web application that helps users find everyday products from sustainable and ethical sources. The goal of this app is a helpful tool that directs consumers to better purchasing options.
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
+### Process
+To view one of our first prototypes click here: https://search-sustainable.herokuapp.com/ . Our app has evolved since then, and we will are excited to show off these new features at the demo!
+
 <!-- AUTHORS-->
 ## Authors
 
